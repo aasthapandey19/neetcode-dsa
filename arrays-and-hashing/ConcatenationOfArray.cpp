@@ -10,3 +10,7 @@ public:
         return result;
     }
 };
+// every push_back in vector will make new array and copy the old array to new array . therefore it is not efficient
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
