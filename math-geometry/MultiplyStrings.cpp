@@ -17,3 +17,5 @@ public:
         return ans;
     }
 };
+// by both strings, and characters are appended to the result string in an alternating fashion.
+// The time complexity is O(n + m) where n is the length of word1 and       m is the length of word2, and the space complexity is O(n + m)
