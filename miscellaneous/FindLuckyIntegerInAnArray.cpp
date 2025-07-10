@@ -10,3 +10,6 @@ public:
         return (res==INT_MIN?-1:res);
     }
 };
+//time complexity: O(n)
+//space complexity: O(n)        
+//where n is the number of elements in the input array arr.
