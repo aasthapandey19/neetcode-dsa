@@ -9,3 +9,7 @@ public:
         
     }
 };
+// Time Complexity: O(n*m)
+// Space Complexity: O(1)   
+// This code rotates a square matrix 90 degrees clockwise in place. 
+// It first transposes the matrix and then reverses each row to achieve the rotation.
