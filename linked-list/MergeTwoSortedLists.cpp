@@ -1,0 +1,21 @@
+ListNode* merge(ListNode* list1,ListNode* list2){
+        if(!list1) return list2;
+        if(!list2) return list1;
+        if(list1->val<=list2->val){
+            list1->next=merge(list1->next,list2);
+            return list1;
+        }
+        else {
+            list2->next=merge(list1,list2->next);
+            return list2;
+        }
+       
+    }
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        if(!list1 && !list2) return NULL;
+         return merge(list1,list2);
+    }
+    // complexity: O(n+m)
+    // space: O(n+m) recursive stack space
+    
